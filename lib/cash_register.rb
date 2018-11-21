@@ -16,7 +16,7 @@ class CashRegister
         discount_val = (self.total * (self.discount/100.0))
         total_val = @total
         self.total = total_val - discount_val
-        "After the discount, the total comes to #{@total}"
+        puts "After the discount, the total comes to #{@total}"
       end
       
     end
