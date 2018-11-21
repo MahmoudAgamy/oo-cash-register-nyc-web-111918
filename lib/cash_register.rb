@@ -30,7 +30,7 @@ class CashRegister
     end
     
     def total=(total = @total)
-      @total = total
+      self.total
     end
   end
   
