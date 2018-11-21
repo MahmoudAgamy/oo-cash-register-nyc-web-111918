@@ -17,6 +17,7 @@ class CashRegister
         puts ">>>>>>#{@discount}"
         puts ">>>total before>>>#{@total}"
         total_val = @total
+        puts discount_val
         self.total = total_val - discount_val
         puts  ">>>total>>>#{@total}"
         #puts "After the discount, the total comes to #{@total}"
