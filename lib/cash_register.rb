@@ -4,7 +4,7 @@ class CashRegister
     #attr_reader :total
     
     @@items = []
-    def initialize(discount = 20)
+    def initialize(discount = 0)
       @total = 0
       @discount = discount
     end
@@ -18,7 +18,8 @@ class CashRegister
     
     def apply_discount
       return "There is no discount to apply." if @discount == 0
-      discount_val = (@total * (@discount/100))
+      @
+      discount_val = (@total * (0.2)
       total_val = @total
       @total = total_val - discount_val
       #puts "After the discount, the total comes to #{@total}"
