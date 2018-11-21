@@ -21,6 +21,7 @@ class CashRegister
         return "There is no discount to apply." if @discount == 0
       else
         discount_val = (self.total * (self.discount/100))
+        puts ">>>>>>#{@discount}"
         total_val = self.total
         @total = total_val - discount_val
         #puts "After the discount, the total comes to #{@total}"
