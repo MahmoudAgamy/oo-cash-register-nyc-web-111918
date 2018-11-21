@@ -4,8 +4,8 @@ class CashRegister
     #attr_reader :total
     
     @@items = []
-    def initialize(discount = 0)
-      @total = 0
+    def initialize(total = 0, discount = 0)
+      @total = total
       @discount = discount
     end
   
