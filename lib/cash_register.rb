@@ -16,14 +16,6 @@ class CashRegister
       @@items << item
     end
     
-    def items
-      @@items
-    end
-    
-    def void_last_transaction
-      @total -= @price
-    end
-    
     def apply_discount
       return "There is no discount to apply." if @discount == 0
       discount_val = (@total * (@discount/100))
@@ -31,6 +23,15 @@ class CashRegister
       @total = total_val - discount_val
       #puts "After the discount, the total comes to #{@total}"
     end
+    
+    def items
+      @@items
+    end
+    
+    def void_last_transaction
+      @total -= @price
+    end
+  
     
     # def total
     #   @total
