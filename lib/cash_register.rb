@@ -30,8 +30,5 @@ class CashRegister
       #puts "After the discount, the total comes to #{@total}"
     end
     
-    def total=(total)
-      @total = total
-    end
   end
   
