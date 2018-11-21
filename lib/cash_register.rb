@@ -20,11 +20,11 @@ class CashRegister
       if @discount == 0 
         return "There is no discount to apply." if @discount == 0
       else
-        discount_val = (self.total * (self.discount/100))*1
+        discount_val = (self.total * (self.discount/100))
         puts ">>>>>>#{@discount}"
         puts ">>>total before>>>#{@total}"
-        total_val = @total*1
-        @total = total_val - discount_val
+        total_val = @total
+        self.total = total_val - discount_val
         puts  ">>>total>>>#{@total}"
         #puts "After the discount, the total comes to #{@total}"
       end
